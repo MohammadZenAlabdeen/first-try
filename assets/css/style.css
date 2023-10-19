@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Fuggles', cursive;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    height: 100vh;
+}
+nav{
+    height: 84px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 140px;
+    align-items: center;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+    padding:40px 0;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+}
+nav img{
+    width: 170px;
+}
+nav button{
+    width: 145px;
+    height: 45px;
+    border: 0;
+    border-radius: 10px;
+    background-color: rgb(39, 174, 96);
+}
+.hero{
+    text-align: center;
+    position: relative;
+    height: 100vh;
+}
+.hero img{
+    width: 100%;
+    height:calc(100vh - 84px);
+    object-fit: cover;
+}
+.hero .info{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: white;
+}
+.hero h1{
+    width: 520px;
+    font-size: 60px;
+    line-height: 80px;
+}
+.featured{
+    background-color: #f7f9fc;
+    padding: 100px;
+}
+.featured h1 , .explore h1 , .recent h1 {
+    width: max-content;
+    margin: 0 auto;
+    font-size: 45px;
+    color: #000052;
+}
+.container{
+    display: flex;
+    width: 80vw;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+    flex-wrap: wrap;
+}
+.featured .container .card{
+    width: 190px;
+    height: 190px;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 5px 5px 10px gray;
+}
+.featured .container .card img{
+    width: 70px;
+}
+.recent{
+    padding: 100px 0;
+}
+
+
+.recent .container .card{
+    width: 340px;
+    height: 340px;
+    box-shadow: 5px 5px 10px gray;
+    border-radius: 5px;
+}
+.recent .container .card h2{
+    font-size: 16px;
+    margin: 20px;
+    color: #000052;
+}
+.recent .container .card img{
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    
+}
+.recent .container .card .End{
+    border-top:1px solid gray;
+    padding:20px ;
+    display: flex;
+    justify-content: space-between;
+}
+.recent .container .card .End .price {
+    background-color: rgb(39, 174, 96);
+    border-radius: 25px;
+    padding: 10px;
+    color: white;
+}
+.explore{
+    padding: 100px 0;
+}
+.explore .container{
+    gap:50px;
+}
+
+.explore .container .card {
+    width: 350px;
+    height: 230px;
+    position: relative;
+}
+.explore .card img{
+    width: 100%;
+    height: 100%;
+}
+.explore .card h2{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(100, 95, 101, 0.3);
+    position: absolute;
+    top:15px;
+    left:15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    background-color: #1d2636;
+    color: rgba(255,255,255,0.5);
+}
+@media screen and (max-width:1000px) {
+    nav{
+        padding: 0 5%;
+    }
+    nav ul{
+        gap: 5%;
+    }
+    nav img{
+        width: 20%;
+    }
+    nav button{
+        width: 20%;
+    }
+    .container{
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .featured .container .card{
+        width: 20%;
+        height:120px;
+        font-size: 10px;
+    }
+    .featured .container .card img{
+        width: 50%;
+    }
+    .recent .container .card{
+        width: 50%;
+        height: fit-content;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:600px) {
+    nav{
+        padding: 0;
+    }
+    nav ul{
+        gap: 5%;
+    }
+    nav img{
+        width: 10%;
+    }
+    nav button{
+        width: 10%;
+    }
+    .hero h1{
+        font-size: large;
+    }
+    .container{
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+    .featured h1{
+        font-size: large;
+    }
+    .featured .container .card{
+        width: 20%;
+        height:fit-content;
+        font-size: 5px;
+    }
+    .featured .container .card img{
+        width: 50%;
+    }
+    .recent .container .card{
+        width: 60%;
+        height: fit-content;
+        font-size: 15px;
+    }
+}
